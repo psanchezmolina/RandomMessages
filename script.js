@@ -13,8 +13,8 @@ const athletes = [
 
 // Strings used to generate the sentences, all saved inside an array
 const olimpicEvents = ["200m freestyle (swimming)", "BMX Freestyle", "triple jump", "table tennis", "park skating","400m hurdles (track and field)", "weightlifting (105 kg category)", "rhythmic gymnastics (individual)", "beach volleyball", "canoe sprint (K-4 1000m)"];
-const thoughts = ["I think he/she", "I am sure", "That would be awesome if", "I don't see", "It'd be a wonder if", "I'd pay to see how", "I wouldn't bet on it, but", "I wonder if", "It'd be a sight to see if"];
-const results = ["will do great", "will be a great show", "could be good with some practice", "would surprise us all", "could really shake things up", "would definitely draw a crowd", "might just set a new record", "could inspire a new generation of athletes"];
+const thoughts = ["In my opinion,", "From my perspective,", "I have a hunch that", "It's quite possible that", "The chances are high that", "I wouldn't bet against the possibility that", "It's conceivable that", "There's a good chance that", "I believe", "Imagine if"];
+const results = ["they perform incredibly.", "the show will be spectacular.", "it could lead to some interesting outcomes.", "we might see some new records.", "they surprise everyone.", "it leads to a major shake-up.", "they pull off an upset.", "they redefine the sport.", "it becomes a historic moment.", "it inspires a new generation of athletes."];
 
 // The function that generates random numbers
 const getRandom = arr => {
@@ -23,7 +23,7 @@ const getRandom = arr => {
 }
 
 // This function grabs one of the elements out of each array and generates the message
-const generateScenario = arr => {
+const generateScenario = () => {
     const athlete = getRandom(athletes);
     let olimpicEvent = getRandom(olimpicEvents);
     let thought = getRandom(thoughts);
